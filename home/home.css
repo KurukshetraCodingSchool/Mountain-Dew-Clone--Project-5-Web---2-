@@ -79,6 +79,7 @@ border: none;
 padding: 15px;
 font-weight: 900;
 cursor: pointer;
+
 }
 .page2{
     width: 100%;
@@ -93,7 +94,19 @@ cursor: pointer;
 .page2 h1{
     color: #97D700;
     font-size: 25px;
-   
+    position: relative;
+}
+.page2 h1::after{
+    content: "R";
+    border: 1px solid #97D700;
+    border-radius: 50%;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 10px;
+    position: absolute;
+    left: 19%;
 }
 .page2 .dew{
     width: 90%;
@@ -106,6 +119,7 @@ cursor: pointer;
     width:32%;
     height: 90%;
 background-color: #171719;
+position: relative;
 }
 
 .page2 .dew #dew1 img{
@@ -128,4 +142,11 @@ background-color: #171719;
     font-size: 20px;
     margin-left: 10px;
     color: white;
+}
+.page2 .dew #dew1 i{
+    color: #97D700;
+    font-size: 30px;
+    position: absolute;
+    top: 92%;
+    left: 90%;
 }
